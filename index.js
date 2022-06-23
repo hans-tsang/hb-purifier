@@ -175,7 +175,7 @@ MiAirPurifier.prototype = {
 
 					logger.debug('Discovered Mi Air Purifier (%s) at %s', device.miioModel, that.ip);
 					logger.debug('Model       : ' + device.miioModel);
-					logger.debug('Power       : ' + device.property('power'));
+					logger.debug('Power       : ' + device.property('air-purifier:on'));
 					logger.debug('Mode        : ' + device.property('mode'));
 					logger.debug('Temperature : ' + device.property('temperature'));
 					logger.debug('Humidity    : ' + device.property('humidity'));
